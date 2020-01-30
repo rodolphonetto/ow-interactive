@@ -1,0 +1,1711 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>desafio-ow-interactive 0.1.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>desafio-ow-interactive</h3>
+          <div class='mb1'><code>0.1.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#cartbutton'
+                  class="">
+                  CartButton
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#cartlist'
+                  class="">
+                  CartList
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useeffect-convertedprice'
+                  class="">
+                  useEffect-convertedPrice
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useeffect-carttotalprice'
+                  class="">
+                  useEffect-cartTotalPrice
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#addqtd'
+                  class="">
+                  addQtd
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#removeqtd'
+                  class="">
+                  removeQtd
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#deleteproduct'
+                  class="">
+                  deleteProduct
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#deleteproduct'
+                  class="">
+                  deleteProduct
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#cleancartproducts'
+                  class="">
+                  cleanCartProducts
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#checkoutform'
+                  class="">
+                  CheckoutForm
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sentbutton'
+                  class="">
+                  SentButton
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#cleancartbutton'
+                  class="">
+                  CleanCartButton
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#footer'
+                  class="">
+                  Footer
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#imageslider'
+                  class="">
+                  ImageSlider
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#navbar'
+                  class="">
+                  NavBar
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useeffect-cartcount'
+                  class="">
+                  useEffect-CartCount
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#productcard'
+                  class="">
+                  ProductCard
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#products'
+                  class="">
+                  Products
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#searchproduct'
+                  class="">
+                  SearchProduct
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#additemtocart'
+                  class="">
+                  AddItemToCart
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#successmodal'
+                  class="">
+                  SuccessModal
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='cartbutton'>
+      CartButton
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente gera os botões do carrinho.</p>
+
+    <div class='pre p1 fill-light mt0'>CartButton</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>finish</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    true/false para definir tipo do botão
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Se true botão tipo finish (roxo) se false botão comum (cinza)
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='cartlist'>
+      CartList
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente gera a lista do carrinho.</p>
+
+    <div class='pre p1 fill-light mt0'>CartList</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Retorna a lista dos produtos que estão adicionados ao carrinho
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useeffect-convertedprice'>
+      useEffect-convertedPrice
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função que recupera os produtos do localStorage e converte o preço.</p>
+
+    <div class='pre p1 fill-light mt0'>useEffect-convertedPrice</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        Retorna e salva no state todos os produtos com o preço convertido em Float
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useeffect-carttotalprice'>
+      useEffect-cartTotalPrice
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função que multiplica o preço dos produtos pela quantidade no carrinho e soma todos.</p>
+
+    <div class='pre p1 fill-light mt0'>useEffect-cartTotalPrice</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        Salva no state a soma de todos os produtos no carrinho
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='addqtd'>
+      addQtd
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função adiciona 1 na quantidade do produto.</p>
+
+    <div class='pre p1 fill-light mt0'>addQtd</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>ProductsOnCart</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    Array com todos os produtos no carrinho
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Nome do produto que está sendo adicionado
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        Salva o produto com a quantidade atualizada no localStorage e no state
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='removeqtd'>
+      removeQtd
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função subtrai 1 na quantidade do produto.</p>
+
+    <div class='pre p1 fill-light mt0'>removeQtd</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>ProductsOnCart</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    Array com todos os produtos no carrinho
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Nome do produto que está sendo subtraido
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        Salva o produto com a quantidade atualizada no localStorage e no state
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='deleteproduct'>
+      deleteProduct
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função que exclui o produto do carrinho</p>
+
+    <div class='pre p1 fill-light mt0'>deleteProduct</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>ProductsOnCart</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    Array com todos os produtos no carrinho
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Nome do produto que está sendo deletado
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        remove o produto no localStorage e no state
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='deleteproduct'>
+      deleteProduct
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função busca de endereço.</p>
+
+    <div class='pre p1 fill-light mt0'>deleteProduct</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>evento</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    Evento que dispara ao sair do campo, podendo pegar o target.value necessário
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        Endereço completo
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='cleancartproducts'>
+      cleanCartProducts
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função que limpa o carrinho deletando todos os produtos.</p>
+
+    <div class='pre p1 fill-light mt0'>cleanCartProducts</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        remove todos os produtos do localStorage e do state
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='checkoutform'>
+      CheckoutForm
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente gera o formulario do checkout com formik e validação Yup.</p>
+
+    <div class='pre p1 fill-light mt0'>CheckoutForm</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Formulário checkout completo
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sentbutton'>
+      SentButton
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente gera o botão do checkout.</p>
+
+    <div class='pre p1 fill-light mt0'>SentButton</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>finish</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    true/false para definir tipo do botão
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Se true botão tipo finish (roxo) se false botão comum (cinza)
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='cleancartbutton'>
+      CleanCartButton
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente gera o botão de limpar carrinho.</p>
+
+    <div class='pre p1 fill-light mt0'>CleanCartButton</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>clicked</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    Função que executa a limpeza do carrinho
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Botão para limpeza do carrinho
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='footer'>
+      Footer
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente footer</p>
+
+    <div class='pre p1 fill-light mt0'>Footer</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Footer de todas as paginas
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='imageslider'>
+      ImageSlider
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente de terceiro para geração de Slider de imagens
+Documentação completa => <a href="https://www.npmjs.com/package/react-responsive-carousel">https://www.npmjs.com/package/react-responsive-carousel</a></p>
+
+    <div class='pre p1 fill-light mt0'>ImageSlider</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>showThumbs</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    Define se mostra ou não thumbs das imagens
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>autoPlay</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    Define se começa a rotacionar as imagens automaticamente
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>infiniteLoop</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    Define se continua rotacionando as imagens infinitamente
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>showArrows</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    Define se mostra ou não setas para trocar a imagem
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>showStatus</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    Define se mostra ou não o status de qual imagem está sendo exibida
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Componente Slider de imagens
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='navbar'>
+      NavBar
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente NavBar</p>
+
+    <div class='pre p1 fill-light mt0'>NavBar</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        NavBar de todas as paginas
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useeffect-cartcount'>
+      useEffect-CartCount
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função que recupera os produtos do localStorage.</p>
+
+    <div class='pre p1 fill-light mt0'>useEffect-CartCount</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        Retorna e salva no context a quantidade de produtos no carrinho
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='productcard'>
+      ProductCard
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente que gera o card de cada produto.</p>
+
+    <div class='pre p1 fill-light mt0'>ProductCard</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Nome do produto
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>price</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Preço do produto
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>picture</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Foto do produto
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>clicked</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    Função que adiciona o produto ao carrinho
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Componente com o card do produto
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='products'>
+      Products
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente gera a lista de produtos na pagina inicial.</p>
+
+    <div class='pre p1 fill-light mt0'>Products</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>products</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>)</code>
+	    Array contendo dos os produtos
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Componente com a lista de produtos
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='searchproduct'>
+      SearchProduct
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função que simula uma busca filtrando os produtos.</p>
+
+    <div class='pre p1 fill-light mt0'>SearchProduct</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>SearchWord</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Palavra chave para executar o filtro
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        Retorna e salva no state apenas os produtos que atendem o filtro
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='additemtocart'>
+      AddItemToCart
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Função que adiciona produtos no carrinho. Ela verifica se o carrinho já tem produtos
+em caso negativo salva o primeiro produto. Em caso positivo verifica se aquele produto já está no carrinho
+se sim, adiciona a quantidade, se não adiciona o novo produto</p>
+
+    <div class='pre p1 fill-light mt0'>AddItemToCart</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Nome do produto
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>price</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Preço do produto
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        Salva os produtos no localStorage e no state
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='successmodal'>
+      SuccessModal
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Componente que gera o modal de sucesso</p>
+
+    <div class='pre p1 fill-light mt0'>SuccessModal</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>visible</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    Se está visivel ou não
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        Componente com o modal de sucesso
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
